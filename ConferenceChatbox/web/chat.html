@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>WorkshopConnect Chat</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<h1>🎓 WorkshopConnect</h1>
+
+<h3 id="currentUser"></h3>
+
+<br>
+
+<!-- Statistics Dashboard -->
+
+<div class="card stats-card">
+
+    <h2>📊 Workshop Statistics</h2>
+
+    <br>
+
+    <div class="stats-grid">
+
+        <div class="stat-box">
+
+            <h3>Participants</h3>
+
+            <p id="participantCount">0</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3>Messages</h3>
+
+            <p id="messageCountDisplay">0</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3>Status</h3>
+
+            <p id="workshopStatus">LIVE</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<br>
+
+<div class="chat-container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h3>👥 Participants</h3>
+
+        <br>
+
+        <div id="onlineUsers"></div>
+
+        <br>
+
+        <button
+            class="btn btn-secondary"
+            onclick="logout()">
+
+            Leave Workshop
+
+        </button>
+
+    </div>
+
+    <!-- Chat Area -->
+
+    <div class="chat-area">
+
+        <h2>💬 Live Workshop Chat</h2>
+
+        <br>
+
+        <!-- Host Announcement Controls -->
+
+        <div id="hostAnnouncementControls">
+
+            <input
+                type="text"
+                id="announcementInput"
+                placeholder="Enter Announcement">
+
+            <button
+                class="btn"
+                onclick="sendAnnouncement()">
+
+                📢 Send Announcement
+
+            </button>
+
+            <br><br>
+
+        </div>
+
+        <div
+            id="chatBox"
+            class="chat-box">
+        </div>
+
+        <input
+            type="text"
+            id="messageInput"
+            placeholder="Type your message">
+
+        <button
+            class="btn"
+            onclick="sendMessage()">
+
+            Send Message
+
+        </button>
+
+    </div>
+
+</div>
+
+<br>
+
+<!-- Announcement Panel -->
+
+<div
+    id="announcementPanel"
+    class="card">
+
+    <h2>📢 Latest Announcement</h2>
+
+    <br>
+
+    <div id="announcementBox">
+
+        No announcements yet.
+
+    </div>
+
+</div>
+
+<br>
+
+<!-- Raise Hand Panel -->
+
+<div
+    id="raiseHandPanel"
+    class="card">
+
+    <h2>✋ Questions & Raise Hand</h2>
+
+    <br>
+
+    <button
+        class="btn"
+        onclick="raiseHand()">
+
+        Raise Hand
+
+    </button>
+
+    <br><br>
+
+    <div id="raiseHandList">
+
+    </div>
+
+</div>
+
+<br>
+
+<!-- Host Dashboard -->
+
+<div
+    id="hostDashboard"
+    class="card">
+
+    <h2>👨‍🏫 Host Dashboard</h2>
+
+    <br>
+
+    <input
+        type="text"
+        id="studentSearch"
+        placeholder="Search Student">
+
+    <br><br>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Anonymous ID</th>
+
+                <th>Name</th>
+
+                <th>Roll Number</th>
+
+                <th>Join Time</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="studentTable">
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <button
+        class="btn"
+        onclick="exportAttendance()">
+
+        📄 Export Attendance
+
+    </button>
+
+</div>
+```
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
