@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WorkshopConnect - Host Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="login-card card">
+
+        <h1>🎓 WorkshopConnect</h1>
+
+        <h2>Host Dashboard Access</h2>
+
+        <p style="text-align:center;margin-top:10px;">
+
+            Secure access for workshop organizers
+
+        </p>
+
+        <br>
+
+        <div class="card">
+
+            <h3>Workshop Information</h3>
+
+            <br>
+
+            <p>
+                Workshop Code :
+                <strong>WKC2026</strong>
+            </p>
+
+            <br>
+
+            <p>
+                Capacity :
+                100+ Participants
+            </p>
+
+            <br>
+
+            <p>
+                Status :
+                🟢 LIVE
+            </p>
+
+        </div>
+
+        <br>
+
+        <input
+            type="text"
+            id="hostUsername"
+            placeholder="Enter Host Username">
+
+        <input
+            type="password"
+            id="hostPassword"
+            placeholder="Enter Host Password">
+
+        <button
+            class="btn"
+            onclick="hostLogin()">
+
+            Login as Host
+
+        </button>
+
+        <br>
+
+        <div class="card">
+
+            <h3>Demo Credentials</h3>
+
+            <br>
+
+            <p>
+                Username :
+                <strong>host</strong>
+            </p>
+
+            <p>
+                Password :
+                <strong>admin123</strong>
+            </p>
+
+        </div>
+
+        <br>
+
+        <a href="index.html">
+
+            <button class="btn btn-secondary">
+
+                Back To Home
+
+            </button>
+
+        </a>
+
+    </div>
+
+    <br>
+
+    <div class="features">
+
+        <div class="feature-card">
+
+            <h3>👨‍🏫 Host Controls</h3>
+
+            <p>
+                Manage students, attendance,
+                announcements and workshop sessions.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>📢 Announcements</h3>
+
+            <p>
+                Broadcast important updates instantly
+                to all participants.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>📋 Attendance Tracking</h3>
+
+            <p>
+                Automatically monitor participant
+                attendance records.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>📊 Analytics Dashboard</h3>
+
+            <p>
+                Track engagement, messages
+                and workshop statistics.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>✋ Raise Hand System</h3>
+
+            <p>
+                Receive student questions
+                during live workshops.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>📄 Export Reports</h3>
+
+            <p>
+                Download attendance and
+                workshop activity reports.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
